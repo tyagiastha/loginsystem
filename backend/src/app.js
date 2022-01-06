@@ -24,7 +24,7 @@ app.post("/register", async (req, res) => {
                 confirm_password: confirm_password
             })
             await newUser.save();
-            res.status(201).send(`New user added`);
+            res.status(201).send(`New user added!`);
         }
         else {
             console.log(`Passwords do not match`);
